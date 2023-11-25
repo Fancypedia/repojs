@@ -8,4 +8,4 @@ git push origin --tags
 ```
 
 ```
-https://cdn.jsdelivr.net/gh/Fancypedia/repojs@0.0.1/
+[https://cdn.jsdelivr.net/gh/Fancypedia/repojs@0.0.1/](Link cdn.jsdelivr)
