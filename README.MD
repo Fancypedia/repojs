@@ -1,5 +1,4 @@
-Terminal
-
+## Terminal
 ```
 git tag
 git tag v0.0.2
