@@ -53,8 +53,6 @@ document.addEventListener("DOMContentLoaded", function() {
                     window.location.href = "https://fancypedia.github.io/adminDashboard/";
                 });
                 
-
-                
             } else {
                 // Handle the case when authentication fails
                 message.textContent = "Authentication failed.";

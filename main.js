@@ -6,8 +6,6 @@ import getProduct from "./contentUser/getproduct.js";
 window.LoginUser = LoginUser;
 window.RegistrasiUser = RegistrasiUser;
 
-
-
 import Logout from "./postLogout.js";
 import checkCookie from "./checkCookie.js";
 
