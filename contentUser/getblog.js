@@ -1,11 +1,11 @@
-let bismillahcontentall = "https://asia-southeast2-testlogin-366704.cloudfunctions.net/bismillahcontentall";
+let getallblog = "https://asia-southeast2-testlogin-366704.cloudfunctions.net/getallblog";
 
 export default function getTitle() {
     const searchParams = new URLSearchParams(window.location.search);
     const categoryParam = searchParams.get('kategori');
 
     // Fetch GET request
-    return fetch(bismillahcontentall, {
+    return fetch(getallblog, {
         method: 'GET',
     })
     .then(response => response.json())
@@ -22,7 +22,7 @@ export default function getTitle() {
 
 function displayNews(dataArray, categoryParam) {
     // Reference to the post container
-    const postContainer = document.getElementById('header-title');
+    const postContainer = document.getElementById('mainBlog');
 
     // Loop through the array and generate HTML content for each object
     dataArray.forEach(data => {
@@ -34,9 +34,14 @@ function displayNews(dataArray, categoryParam) {
 
             // Set the HTML content for the post
             postDiv.innerHTML = `
-            <span class="is-block mb-4 text-white is-capitalized">${data.content}</span>
-            <h1 class="mb-5">${data.image}</h1>
-            <p class="mb-6">${data.description}</p>
+            <div class="single-details">
+					<img src="images/blog/${data.id}.png" alt="" class=" w-100">
+
+					<h2 class="my-5 text-lg"><a href="">Build for school for poor child</a></h2>
+
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi explicabo nisi adipisci, harum unde sit, magni fuga alias incidunt neque eius reiciendis perferendis suscipit commodi dolorem ipsa veritatis accusamus. Molestias. Lorem ipsum dolor sit amet, consectetur adipisicing elit. A numquam incidunt earum aut culpa consequatur inventore molestias autem nihil neque voluptas dignissimos tenetur pariatur tempore totam vero, delectus cum, quibusdam?</p>
+
+				</div>
             `;
             // Append the post div to the post container
             postContainer.appendChild(postDiv);
