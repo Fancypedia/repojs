@@ -1,6 +1,6 @@
 let getallblog = "https://asia-southeast2-testlogin-366704.cloudfunctions.net/getallblog";
 
-export default function getTitle() {
+export default function getblogUser() {
     const searchParams = new URLSearchParams(window.location.search);
     const categoryParam = searchParams.get('kategori');
 
