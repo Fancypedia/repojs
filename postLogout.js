@@ -4,15 +4,22 @@
 // window.Logout = Logout;
 // window.checkCookie = checkCookie;
 
+// import { deleteCookie } from "./cookies.js";
+
+// export default function Logout() {
+//     // Hapus cookie
+//     deleteCookie();
+
+//     // Hapus data dari sessionStorage
+//     sessionStorage.clear();
+
+//     // Alihkan ke halaman login
+//     window.location.href = "../../login";
+// }
+
 import { deleteCookie } from "./cookies.js";
 
 export default function Logout() {
-    // Hapus cookie
     deleteCookie();
-
-    // Hapus data dari sessionStorage
-    sessionStorage.clear();
-
-    // Alihkan ke halaman login
-    window.location.href = "../../login";
+    window.location.href = "https://fancypedia.my.id/theme/signin/index.html";
 }

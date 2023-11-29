@@ -1,4 +1,5 @@
 import {setCookieWithExpireHour} from "https://jscroot.github.io/cookie/croot.js";
+import { setCookieWithExpireSecond } from "./cookies.js";
 
 document.addEventListener("DOMContentLoaded", function() {
     const loginFormAdmin = document.getElementById("loginFormAdmin");
@@ -26,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function() {
             if (data.status === true) {
                 const token = data.token;
                 const welcomeMessage = data.message;
-                setCookieWithExpireHour("token",token,2);
+                setCookieWithExpireSecond("token", result.token, 1);
                 message.textContent = welcomeMessage;
                 message.style.color = "green";
                 // window.location.href = "../choices.html";
