@@ -35,11 +35,11 @@ function displayNews(dataArray, categoryParam) {
             // Set the HTML content for the post
             postDiv.innerHTML = `
             <div class="single-details">
-					<img src="images/blog/${data.id}.png" alt="" class=" w-100">
+					<img src="https://i.postimg.cc/zXWsVdd7/blog-1.png" alt="" class=" w-100">
 
-					<h2 class="my-5 text-lg"><a href="">Build for school for poor child</a></h2>
+					<h2 class="my-5 text-lg"><a href="">${data.title}</a></h2>
 
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi explicabo nisi adipisci, harum unde sit, magni fuga alias incidunt neque eius reiciendis perferendis suscipit commodi dolorem ipsa veritatis accusamus. Molestias. Lorem ipsum dolor sit amet, consectetur adipisicing elit. A numquam incidunt earum aut culpa consequatur inventore molestias autem nihil neque voluptas dignissimos tenetur pariatur tempore totam vero, delectus cum, quibusdam?</p>
+					<p>${data.judul}</p>
 
 				</div>
             `;
