@@ -33,7 +33,9 @@ export default function RegistrasiUser(){
 function responseData(result) {
     loadingIndicator.style.display = "none";
     if (result.message == "Berhasil Input Data") {
-        alert("berhasil register")
-        window.location.href = "https://fancypedia.my.id/pages/signin/index.html";
+        alert("Berhasil Input Data");
+    }
+    if (result.message == "Berhasil Input data") {
+        window.location.href = "../signin/index.html";
     }
 }
