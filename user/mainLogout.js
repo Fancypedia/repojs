@@ -1,4 +1,4 @@
-import Logout from "./postLogout.js";
+import Logout from "./logout.js";
 import checkCookie from "./checkCookie.js";
 
 window.Logout = Logout;

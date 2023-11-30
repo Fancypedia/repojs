@@ -1,5 +1,6 @@
 import {setCookieWithExpireHour} from "https://jscroot.github.io/cookie/croot.js";
-import { setCookieWithExpireSecond } from "./cookies.js";
+// import {setCookieWithExpireHour} from "./cookies";
+// import {adminloginbaru} from "./gudangAPI";
 
 document.addEventListener("DOMContentLoaded", function() {
     const loginFormAdmin = document.getElementById("loginFormAdmin");
@@ -11,8 +12,10 @@ document.addEventListener("DOMContentLoaded", function() {
         const username = document.getElementById("username").value;
         const password = document.getElementById("password").value;
 
+
+        // https://asia-southeast2-testlogin-366704.cloudfunctions.net/admin
         // Send a POST request to your authentication API
-        fetch("https://asia-southeast2-testlogin-366704.cloudfunctions.net/admin", {
+        fetch("https://asia-southeast2-testlogin-366704.cloudfunctions.net/loginbaru", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -25,16 +28,22 @@ document.addEventListener("DOMContentLoaded", function() {
         .then(response => response.json())
         .then(data => {
             if (data.status === true) {
+
+                // const myHeaders = new Headers();
+                // let tokencookie = getCookie("token");
+                // myHeaders.set("token", tokencookie);
+
                 const token = data.token;
+
                 const welcomeMessage = data.message;
-                setCookieWithExpireSecond("token", result.token, 1);
+
+                setCookieWithExpireHour("token",token,2);
                 message.textContent = welcomeMessage;
                 message.style.color = "green";
                 // window.location.href = "../choices.html";
                 console.log(token);
                 console.log(welcomeMessage);
                 
-
                 // Menampilkan popup untuk memilih CMS atau adminDashboard
                 const dashboardSelectionPopup = document.getElementById("dashboardSelectionPopup");
                 dashboardSelectionPopup.style.display = "block";
@@ -53,6 +62,8 @@ document.addEventListener("DOMContentLoaded", function() {
                     window.location.href = "https://fancypedia.github.io/adminDashboard/";
                 });
                 
+
+                
             } else {
                 // Handle the case when authentication fails
                 message.textContent = "Authentication failed.";
@@ -61,6 +72,6 @@ document.addEventListener("DOMContentLoaded", function() {
         })
         .catch(error => {
             console.error("Error:", error);
-        });
-    });
+       });
+});
 });
