@@ -10,6 +10,6 @@ export default function checkCookie() {
 		// ATTENTION : Ini dinyalakan dan body onload check cookies 
 		// window.location.href="https://fancypedia.my.id/theme/signin/";
 
-		window.location.href="../pages/signin.html";
+		window.location.href="https://fancypedia.my.id/pages/signin/index.html";
 	}
 }

@@ -34,6 +34,6 @@ function responseData(result) {
     loadingIndicator.style.display = "none";
     if (result.message == "Berhasil Input Data") {
         alert("berhasil register")
-        window.location.href = "../signin/index.html";
+        window.location.href = "https://fancypedia.my.id/pages/signin/index.html";
     }
 }
