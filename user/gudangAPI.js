@@ -6,11 +6,11 @@ export let APILogin = "https://asia-southeast2-annular-hexagon-401501.cloudfunct
 export let getallblog = "https://asia-southeast2-testlogin-366704.cloudfunctions.net/getallblog";
 export let getallproduct = "https://asia-southeast2-testlogin-366704.cloudfunctions.net/getallproduct";
 
-//signup
+//signup user baru
 export let userbarunowa = "https://asia-southeast2-testlogin-366704.cloudfunctions.net/createacountfix";
-
-
-//signin
+//signin user baru
 export let loginuserbarunowa = "https://asia-southeast2-testlogin-366704.cloudfunctions.net/login";
 
+//signin admin baru
+export let adminloginbaru = "https://asia-southeast2-testlogin-366704.cloudfunctions.net/loginbaru";
 
