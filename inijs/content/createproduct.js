@@ -53,7 +53,7 @@ export default function buatPRODUK(){
         "stock": parseInt(getValue("stock")),
         "size": getValue("size"),
         "image": getValue("image"),
-        "status": true
+        "status": getValue("status")
     }
     
     postBiasa(createproductfix,datainjson,tokenkey,tokenvalue,responseData);
