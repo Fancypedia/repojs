@@ -30,6 +30,5 @@ function responseData(result) {
 
     if (result.message == "Berhasil Input data") {
         alert("Berhasil Input Data");
-        window.location.href = "../signin/index.html";
     }
 }
