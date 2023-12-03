@@ -46,14 +46,14 @@ export default function buatPRODUK(){
 
 
     let datainjson = {
-        "nomorid": parseInt(getValue("nomorid")),
-        "name": getValue("name"),
-        "description": getValue("description"),
-        "price": parseInt(getValue("price")),
-        "stock": parseInt(getValue("stock")),
-        "size": getValue("size"),
-        "image": getValue("image"),
-        "status": getValue("status")
+        "Nomorid": parseInt(getValue("nomorid")),
+        "Name": getValue("name"),
+        "Description": getValue("description"),
+        "Price": parseInt(getValue("price")),
+        "Size": getValue("size"),
+        "Stock": parseInt(getValue("stock")),
+        "Image": getValue("image"),
+        "Status": true
     }
     
     postBiasa(createproductfix,datainjson,tokenkey,tokenvalue,responseData);
