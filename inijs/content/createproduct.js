@@ -39,7 +39,7 @@ import { createproductfix } from "../gudangAPI.js";
 import { getCookie } from "../cookies.js";
 
 
-export default function buatPRODUK(){
+export default function buatPRODUKcoy(){
     // tokenstring = getCookie("token")
     let tokenkey = "token";
     let tokenvalue = getCookie("token");
@@ -53,7 +53,7 @@ export default function buatPRODUK(){
         "Size": getValue("size"),
         "Stock": parseInt(getValue("stock")),
         "Image": getValue("image"),
-        "Status": getValue("status")
+        "Status": true
     }
     
     postBiasa(createproductfix,datainjson,tokenkey,tokenvalue,responseData);
