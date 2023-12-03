@@ -49,8 +49,8 @@ export default function buatPRODUK(){
         "nomorid": parseInt(getValue("nomorid")),
         "name": getValue("name"),
         "description": getValue("description"),
-        "price": getValue("price"),
-        "stock": getValue("stock"),
+        "price": parseInt(getValue("price")),
+        "stock": parseInt(getValue("stock")),
         "size": getValue("size"),
         "image": getValue("image"),
         "status": true
