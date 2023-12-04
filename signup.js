@@ -3,7 +3,7 @@ import { getValue } from "./element.js";
 import { userbarunowa } from "./gudangAPI.js";
 
 const loadingIndicator = document.getElementById("loadingIndicator");
-const loginButton = document.getElementById("btnSignup");
+const signupButton = document.getElementById("btnSignup");
 
 export default function RegistrasiUser(){
     let username = getValue("usernamesignup");
@@ -30,7 +30,7 @@ export default function RegistrasiUser(){
         "no_whatsapp": nowa
     }
 
-    loginButton.style.display = "none";
+    signupButton.style.display = "none";
     loadingIndicator.style.display = "block";
     
     postBiasa(userbarunowa,datainjson,responseData);

@@ -4,6 +4,7 @@ import { setCookieWithExpireHour } from "./cookies.js";
 import { loginuserbarunowa } from "./gudangAPI.js"
 
 const loadingIndicator = document.getElementById("loadingIndicator");
+const loginButton = document.getElementById("btnLogin");
 
 export default function LoginUser(){
     let username = getValue("usernamelogin");
@@ -22,6 +23,8 @@ export default function LoginUser(){
         "username": username,
         "password": password
     }
+
+    loginButton.style.display = "none";
     loadingIndicator.style.display = "block";
 
     postBiasa(loginuserbarunowa,datainjson,responseData);
