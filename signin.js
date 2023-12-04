@@ -4,16 +4,22 @@ import { setCookieWithExpireHour } from "./cookies.js";
 import { loginuserbarunowa } from "./gudangAPI.js"
 
 const loadingIndicator = document.getElementById("loadingIndicator");
+const loginButton = document.getElementById("loginButton"); // Assuming your login button has the id "loginButton"
 
 export default function LoginUser(){
+    // Disable the login button to prevent multiple clicks
+    loginButton.disabled = true;
+    
     let username = getValue("usernamelogin");
     let password = getValue("passwordlogin");
     if (!username) {
         alert("Username perlu untuk diisi");
+        loginButton.disabled = false; // Enable the login button
         return; // Stop execution if the fields are not filled
     }
     if (!password) {
         alert("Password perlu diisi");
+        loginButton.disabled = false; // Enable the login button
         return; // Stop execution if the fields are not filled
     }
     let datainjson = {
@@ -38,6 +44,7 @@ export default function LoginUser(){
 
 function responseData(data) {
     loadingIndicator.style.display = "none";
+    loginButton.disabled = false;
 
     if (data.status === true && data.message === "Berhasil Login") {
         const userData = data.data;

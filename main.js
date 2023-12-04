@@ -7,6 +7,10 @@ window.LoginUser = LoginUser;
 window.RegistrasiUser = RegistrasiUser;
 window.LoginAdminFix = LoginAdminFix;
 
+// function LoginUser(x)
+// {
+//     x.disable = true;
+// }
 // const myHeaders = new Headers();
 // let tokencookie = getCookie("token");
 // myHeaders.set("token", tokencookie);
