@@ -22,6 +22,8 @@ export default function RegistrasiUser(){
         return; // Stop execution if the fields are not filled
     }
 
+    loginButton.style.display = "none";
+
     let datainjson = {
         "username": username,
         "password": password,
@@ -38,7 +40,6 @@ function responseData(result) {
     if (result.message == "Berhasil Input data") {
         alert("Berhasil Input Data");
 
-        loginButton.style.display = "none";
         window.location.href = "../signin/index.html";
     }
 }
