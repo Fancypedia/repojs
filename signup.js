@@ -22,13 +22,15 @@ export default function RegistrasiUser(){
         return; // Stop execution if the fields are not filled
     }
 
-    loginButton.style.display = "none";
+    // loginButton.style.display = "none";
 
     let datainjson = {
         "username": username,
         "password": password,
         "no_whatsapp": nowa
     }
+
+    loginButton.style.display = "none";
     loadingIndicator.style.display = "block";
     
     postBiasa(userbarunowa,datainjson,responseData);
