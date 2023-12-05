@@ -78,7 +78,7 @@ function responseData(data) {
         // You can use the extracted data as needed
 
         // For example, setting a cookie
-        setCookieWithExpireHour("name", data.username, 2);
+        setCookieWithExpireHour("name", data.data.username, 2);
         // setCookieWithExpireHour("name", data.username, 2);
 
         // Redirecting to another page
