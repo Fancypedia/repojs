@@ -41,6 +41,28 @@ export default function LoginUser(){
 //     } 
 // }
 
+fetch(loginuserbarunowa, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+            // Assuming you want to include the token in the headers
+        },
+        body: JSON.stringify(datainjson)
+    })
+    .then(response => response.json())
+    .then(data => {
+        // Handle the response directly here
+        console.log(data);
+        if (data.Username) {
+            // Assuming you want to do something with the token
+            responseData(data);
+        }
+        else {
+        }
+    })
+    .catch(error => console.error('Error:', error));
+
+
 function responseData(data) {
     loadingIndicator.style.display = "none";
 
@@ -56,7 +78,7 @@ function responseData(data) {
         // You can use the extracted data as needed
 
         // For example, setting a cookie
-        setCookieWithExpireHour("name", data.username, 2);
+        setCookieWithExpireHour("name", data.Username, 2);
         // setCookieWithExpireHour("name", data.username, 2);
 
         // Redirecting to another page
@@ -70,9 +92,9 @@ function responseData(data) {
     } 
 }
 
-// export function setCookieWithExpireHour(name, value, hours) {
-//     var d = new Date();
-//     d.setTime(d.getTime() + hours * 60 * 60 * 1000);
-//     var expires = "expires=" + d.toUTCString();
-//     document.cookie = name + "=" + value + ";" + expires + ";path=/";
-// }
+function setCookieWithExpireHour(name, value, hours) {
+    var d = new Date();
+    d.setTime(d.getTime() + hours * 60 * 60 * 1000);
+    var expires = "expires=" + d.toUTCString();
+    document.cookie = name + "=" + value + ";" + expires + ";path=/";
+}
