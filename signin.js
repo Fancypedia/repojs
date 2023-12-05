@@ -57,6 +57,7 @@ function responseData(data) {
 
         // For example, setting a cookie
         setCookieWithExpireHour("username", username, 2);
+        setCookieWithExpireHour("name", data.username, 2);
 
         // Redirecting to another page
         window.location.href = "https://fancypedia.my.id/user/";
@@ -68,3 +69,10 @@ function responseData(data) {
         console.log("Public Info:", publicInfo);
     } 
 }
+
+// export function setCookieWithExpireHour(name, value, hours) {
+//     var d = new Date();
+//     d.setTime(d.getTime() + hours * 60 * 60 * 1000);
+//     var expires = "expires=" + d.toUTCString();
+//     document.cookie = name + "=" + value + ";" + expires + ";path=/";
+// }
