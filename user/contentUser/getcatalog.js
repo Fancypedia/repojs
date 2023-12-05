@@ -75,7 +75,6 @@ export default function getCatalog() {
                         <h3 class="mb-3"><a href="blog-single.html">${product.content_two}</a></h3>
                         <p class="mb-5">${product.description}</p>
         
-                        <a href="blog-single.html" class="btn btn-small btn-main is-rounded">${product.description_two}</a>
                     </div>
                 </div>
             </div>
@@ -88,3 +87,5 @@ export default function getCatalog() {
     displayProducts(data.data);
 })
 }
+
+//<a href="blog-single.html" class="btn btn-small btn-main is-rounded">${product.description_two}</a>
