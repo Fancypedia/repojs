@@ -1,7 +1,7 @@
 import { getCookie } from "./cookies.js";
 
 export default function checkCookie() {
-    let username = getCookie("username");
+    let username = getCookie("name");
 	if (username != "") {
 	// alert("Hi " + username +" Welcome to Fancypedia");
 	} else {
