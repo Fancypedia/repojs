@@ -28,7 +28,7 @@ export default function LoginUser(){
     loadingIndicator.style.display = "block";
 
     postBiasa(loginuserbarunowa,datainjson,responseData);
-
+}
 
 
 // function responseData(data) {
@@ -40,29 +40,6 @@ export default function LoginUser(){
 //         console.log(token);
 //     } 
 // }
-
-fetch(loginuserbarunowa, {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json',
-            // Assuming you want to include the token in the headers
-        },
-        body: JSON.stringify(datainjson)
-    })
-    .then(response => response.json())
-    .then(data => {
-        // Handle the response directly here
-        console.log(data);
-        if (data.username) {
-            // Assuming you want to do something with the token
-            responseData(data);
-        }
-        else {
-        }
-    })
-    .catch(error => console.error('Error:', error));
-}
-
 function responseData(data) {
     loadingIndicator.style.display = "none";
 
@@ -92,9 +69,9 @@ function responseData(data) {
     } 
 }
 
-function setCookieWithExpireHour(name, value, hours) {
-    var d = new Date();
-    d.setTime(d.getTime() + hours * 60 * 60 * 1000);
-    var expires = "expires=" + d.toUTCString();
-    document.cookie = name + "=" + value + ";" + expires + ";path=/";
-}
+// function setCookieWithExpireHour(name, value, hours) {
+//     var d = new Date();
+//     d.setTime(d.getTime() + hours * 60 * 60 * 1000);
+//     var expires = "expires=" + d.toUTCString();
+//     document.cookie = name + "=" + value + ";" + expires + ";path=/";
+// }
