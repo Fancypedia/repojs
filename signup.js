@@ -40,8 +40,6 @@ function responseData(result) {
     loadingIndicator.style.display = "none";
 
     if (result.message == "Berhasil Input data") {
-        alert("Berhasil Input Data");
-
         window.location.href = "../signin/index.html";
     }
 }
