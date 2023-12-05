@@ -56,8 +56,8 @@ function responseData(data) {
         // You can use the extracted data as needed
 
         // For example, setting a cookie
-        setCookieWithExpireHour("username", username, 2);
         setCookieWithExpireHour("name", data.username, 2);
+        // setCookieWithExpireHour("name", data.username, 2);
 
         // Redirecting to another page
         window.location.href = "https://fancypedia.my.id/user/";
