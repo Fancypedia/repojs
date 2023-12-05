@@ -29,7 +29,7 @@ export default function LoginUser(){
 
     postBiasa(loginuserbarunowa,datainjson,responseData);
 
-}
+
 
 // function responseData(data) {
 //     loadingIndicator.style.display = "none";
@@ -53,7 +53,7 @@ fetch(loginuserbarunowa, {
     .then(data => {
         // Handle the response directly here
         console.log(data);
-        if (data.Username) {
+        if (data.username) {
             // Assuming you want to do something with the token
             responseData(data);
         }
@@ -61,7 +61,7 @@ fetch(loginuserbarunowa, {
         }
     })
     .catch(error => console.error('Error:', error));
-
+}
 
 function responseData(data) {
     loadingIndicator.style.display = "none";
@@ -78,7 +78,7 @@ function responseData(data) {
         // You can use the extracted data as needed
 
         // For example, setting a cookie
-        setCookieWithExpireHour("name", data.Username, 2);
+        setCookieWithExpireHour("name", data.username, 2);
         // setCookieWithExpireHour("name", data.username, 2);
 
         // Redirecting to another page
