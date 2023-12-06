@@ -41,5 +41,7 @@ function responseData(result) {
 
     if (result.message == "Berhasil Input data") {
         window.location.href = "../signin/index.html";
+    }else{
+        console.error("Gagal Signup, Coba Lagi");
     }
 }
