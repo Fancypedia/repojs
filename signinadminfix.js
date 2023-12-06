@@ -10,11 +10,11 @@ export default function LoginAdminFix(){
     let username = getValue("username");
     let password = getValue("password");
     if (!username) {
-        alert("Username perlu untuk diisi");
+        // alert("Username perlu untuk diisi");
         return; // Stop execution if the fields are not filled
     }
     if (!password) {
-        alert("Password perlu diisi");
+        // alert("Password perlu diisi");
         return; // Stop execution if the fields are not filled
     }
     let datainjson = {

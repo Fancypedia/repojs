@@ -10,15 +10,15 @@ export default function RegistrasiUser(){
     let password = getValue("passwordsignup");
     let nowa = getValue("nowa");
     if (!username) {
-        alert("Username perlu diisi");
+        // alert("Username perlu diisi");
         return; // Stop execution if the fields are not filled
     }
     if (!password) {
-        alert("Password perlu diisi");
+        // alert("Password perlu diisi");
         return; // Stop execution if the fields are not filled
     }
     if (!nowa) {
-        alert("NoWa perlu diisi");
+        // alert("NoWa perlu diisi");
         return; // Stop execution if the fields are not filled
     }
 

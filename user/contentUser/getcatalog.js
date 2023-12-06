@@ -74,6 +74,7 @@ export default function getCatalog() {
         
                         <h3 class="mb-3"><a href="blog-single.html">${product.content_two}</a></h3>
                         <p class="mb-5">${product.description}</p>
+                        
         
                     </div>
                 </div>
