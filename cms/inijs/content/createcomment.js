@@ -14,7 +14,7 @@ export default function createKomen(){
         "id": parseInt(getValue("id")),
         "username": getValue("username"),
         "comment": getValue("comment"),
-        "answer": getValue("answer"),
+        // "answer": getValue("answer"),
         "questions": getValue("questions"),
         "tanggal": getValue("tanggal"),
         "status": true
@@ -25,7 +25,11 @@ export default function createKomen(){
 
 function responseData(result) {
 
-    if (result.message == "Berhasil Input data") {
+    if (result.status == true) {
         alert("Berhasil Input Data");
+        window.location.href = "../getcomment.html";
+    }
+    else{
+        console.log("gagal")
     }
 }

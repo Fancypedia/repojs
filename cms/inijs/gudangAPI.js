@@ -13,7 +13,9 @@ export let loginuserbarunowa = "https://asia-southeast2-testlogin-366704.cloudfu
 //signin admin baru
 export let adminloginbaru = "https://asia-southeast2-testlogin-366704.cloudfunctions.net/loginbaru";
 
-
+export let updateproductt = "https://asia-southeast2-testlogin-366704.cloudfunctions.net/updateproductt";
+export let updatecommentt = "https://asia-southeast2-testlogin-366704.cloudfunctions.net/updatecommentt";
+export let upadateblog_1 = "https://asia-southeast2-testlogin-366704.cloudfunctions.net/upadateblog-1";
 
 
 export let createblogg = "https://asia-southeast2-testlogin-366704.cloudfunctions.net/createblogg";

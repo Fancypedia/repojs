@@ -12,13 +12,13 @@ export default function createBlog(){
 
     let datainjson = {
         "id": parseInt(getValue("id")),
-        "content_one": getValue("contentone"),
-        "content_two": getValue("contenttwo"),
+        "content_one": getValue("content_one"),
+        "content_two": getValue("content_two"),
         "image": getValue("image"),
         // "title": getValue("title"),
         // "title_two": getValue("titletwo"),
         "description": getValue("description"),
-        "description_two": getValue("description2"),
+        // "description_two": getValue("description2"),
         // "description_3": getValue("description3"),
         "status": true
     }
@@ -28,7 +28,8 @@ export default function createBlog(){
 
 function responseData(result) {
 
-    if (result.message == "Berhasil Input data") {
+    if (result.status == true) {
         alert("Berhasil Input Data");
+        window.location.href = "../getblog.html";
     }
 }
