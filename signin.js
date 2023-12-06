@@ -66,9 +66,11 @@ function responseData(data) {
         console.log("Password:", password);
         console.log("Private Info:", privateInfo);
         console.log("Public Info:", publicInfo);
-    }else{
+    }else {
         console.error("Gagal Login, Coba Lagi");
+        return "Error: Gagal Login, Coba Lagi";
     }
+    
 }
 
 // function setCookieWithExpireHour(name, value, hours) {
