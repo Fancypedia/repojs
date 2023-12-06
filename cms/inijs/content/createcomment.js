@@ -27,7 +27,7 @@ function responseData(result) {
 
     if (result.status == true) {
         alert("Berhasil Input Data");
-        window.location.href = "../getcomment.html";
+        window.location.href = "getcomment.html";
     }
     else{
         console.log("gagal")

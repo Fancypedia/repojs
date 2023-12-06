@@ -30,6 +30,6 @@ function responseData(result) {
 
     if (result.status == true) {
         alert("Berhasil Input Data");
-        window.location.href = "../getblog.html";
+        window.location.href = "getblog.html";
     }
 }
