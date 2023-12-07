@@ -12,7 +12,6 @@ export default function userAuthorization() {
         redirect: 'follow'
     };
 
-
     // Fetch GET request
     return fetch(APIAuthorizationUser, requestOptions)
     .then(response => {
@@ -40,7 +39,6 @@ function handleAuthorizationResult(data) {
         
     } else if (data.status === false) {
         // No token header or no decode result
-        console.error('Error:', message);
         deleteCookie();
         window.location.href="https://fancypedia.my.id/pages/signin/index.html";
 
