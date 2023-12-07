@@ -43,10 +43,10 @@ export default function LoginUser(){
 function responseData(result) {
     loadingIndicator.style.display = "none";
 
-    if (result.status === true && result.message === "Berhasil Login") {
+    if (result.status === true) {
         // const userData = data.data;
         const token = result.token;
-
+        
         // Accessing individual properties from the data object
         // const username = userData.Username;
         // const password = userData.Password;

@@ -42,7 +42,7 @@ export default function LoginAdminFix(){
 function responseData(data) {
     loadingIndicator.style.display = "none";
 
-    if (data.status === true && data.message === "Selamat Datang") {
+    if (data.status === true) {
         const token = data.token;
 
         // You can use the extracted data as needed
