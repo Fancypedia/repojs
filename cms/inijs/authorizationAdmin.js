@@ -1,5 +1,5 @@
 import { getCookie,deleteCookie } from "../cookies.js";
-import { APIAuthorizationAdmin } from "../gudangAPI.js";
+import { APIAuthorizationAdmin } from "./gudangAPI.js";
 
 
 
