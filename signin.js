@@ -40,19 +40,19 @@ export default function LoginUser(){
 //         console.log(token);
 //     } 
 // }
-function responseData(data) {
+function responseData(result) {
     loadingIndicator.style.display = "none";
 
-    if (data.status === true && data.message === "Berhasil Login") {
+    if (result.status === true && result.message === "Berhasil Login") {
         // const userData = data.data;
-        const token = data.token;
+        const token = result.token;
 
         // Accessing individual properties from the data object
         // const username = userData.Username;
         // const password = userData.Password;
         // const privateInfo = userData.Private;
         // const publicInfo = userData.Publick;
-        const username = data.username;
+        const username = result.username;
         // const pasetoUser = userData. 
         // Note: Typo in the property name ("Publick" instead of "Public")
 
