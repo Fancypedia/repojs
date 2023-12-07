@@ -44,14 +44,18 @@ function responseData(data) {
     loadingIndicator.style.display = "none";
 
     if (data.status === true && data.message === "Berhasil Login") {
-        const userData = data.data;
+        // const userData = data.data;
         const token = data.token;
 
         // Accessing individual properties from the data object
-        const username = userData.Username;
-        const password = userData.Password;
-        const privateInfo = userData.Private;
-        const publicInfo = userData.Publick;
+        // const username = userData.Username;
+        // const password = userData.Password;
+        // const privateInfo = userData.Private;
+        // const publicInfo = userData.Publick;
+        const username = data.Username;
+        const password = data.Password;
+        const privateInfo = data.Private;
+        const publicInfo = data.Publick;
         // const pasetoUser = userData. 
         // Note: Typo in the property name ("Publick" instead of "Public")
 
