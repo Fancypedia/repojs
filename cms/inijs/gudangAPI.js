@@ -1,13 +1,18 @@
 export let APIRegistrasi = "https://asia-southeast2-annular-hexagon-401501.cloudfunctions.net/signup-1fancy";
 export let APILogin = "https://asia-southeast2-annular-hexagon-401501.cloudfunctions.net/signin-1fancy";
 
-export let bismillahcontentall = "https://asia-southeast2-testlogin-366704.cloudfunctions.net/bismillahcontentall";
+// export let bismillahcontentall = "https://asia-southeast2-testlogin-366704.cloudfunctions.net/bismillahcontentall";
+
+//authloginuser
+export let APIAuthorizationUser = "https://asia-southeast2-testlogin-366704.cloudfunctions.net/login-4";
+
+//authloginadmin
+export let APIAuthorizationAdmin = "https://asia-southeast2-testlogin-366704.cloudfunctions.net/login-5";
 
 //signup user baru
 export let userbarunowa = "https://asia-southeast2-testlogin-366704.cloudfunctions.net/createacountfix";
 //signin user baru
 export let loginuserbarunowa = "https://asia-southeast2-testlogin-366704.cloudfunctions.net/login";
-
 
 
 //signin admin baru

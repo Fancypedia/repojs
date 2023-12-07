@@ -1,15 +1,15 @@
-import { getCookie } from "./cookies.js";
+// import { getCookie } from "./cookies.js";
 
-export default function checkCookie() {
-    let token = getCookie("token");
-	if (token != "") {
-	// alert("Hi Welcome to Fancypedia");
-	} else {
-		// alert("Biasakan Login Dulu Ya Bang!")
+// export default function checkCookie() {
+//     let token = getCookie("token");
+// 	if (token != "") {
+// 	// alert("Hi Welcome to Fancypedia");
+// 	} else {
+// 		// alert("Biasakan Login Dulu Ya Bang!")
 
-		// ATTENTION : Ini dinyalakan dan body onload check cookies 
-		// window.location.href="https://fancypedia.my.id/theme/signin/";
+// 		// ATTENTION : Ini dinyalakan dan body onload check cookies 
+// 		// window.location.href="https://fancypedia.my.id/theme/signin/";
 
-		window.location.href="https://fancypedia.my.id/pages/signin/index.html";
-	}
-}
+// 		window.location.href="https://fancypedia.my.id/pages/signin/index.html";
+// 	}
+// }
