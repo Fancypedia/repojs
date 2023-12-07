@@ -45,23 +45,29 @@ function responseData(data) {
 
     if (data.status === true && data.message === "Berhasil Login") {
         const userData = data.data;
+        const token = data.token;
 
         // Accessing individual properties from the data object
         const username = userData.Username;
         const password = userData.Password;
         const privateInfo = userData.Private;
-        const publicInfo = userData.Publick; // Note: Typo in the property name ("Publick" instead of "Public")
+        const publicInfo = userData.Publick;
+        // const pasetoUser = userData. 
+        // Note: Typo in the property name ("Publick" instead of "Public")
 
         // You can use the extracted data as needed
 
         // For example, setting a cookie
         setCookieWithExpireHour("name", getValue("usernamelogin"), 2);
+        setCookieWithExpireHour("token", token, 2);
         // setCookieWithExpireHour("name", data.username, 2);
 
         // Redirecting to another page
         window.location.href = "https://fancypedia.my.id/user/";
 
         // Logging some information
+        console.log("token", token);
+
         console.log("Username:", username);
         console.log("Password:", password);
         console.log("Private Info:", privateInfo);
