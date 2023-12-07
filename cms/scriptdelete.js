@@ -1,6 +1,7 @@
 function deleteProduct() {
     const productID = parseInt(document.getElementById('productID').value)
-  
+    let tokenvalue = getCookie('token')
+
     // Lakukan validasi jika productID tidak kosong
     if (productID === '') {
       alert('Please enter a Product ID');
@@ -15,7 +16,8 @@ function deleteProduct() {
     fetch(endpoint, {
       method: 'DELETE',
       headers: {
-        'Content-Type': 'application/json'
+        'Content-Type': 'application/json',
+        'token': tokenvalue
       },
       body: JSON.stringify(payload)
     })
@@ -39,3 +41,19 @@ const id = searchParams.get("id");
 const val = document.getElementById("productID");
 val.value = id;
 console.log(id);
+
+function getCookie(cname) {
+	let name = cname + "=";
+	let decodedCookie = decodeURIComponent(document.cookie);
+	let ca = decodedCookie.split(';');
+	for(let i = 0; i < ca.length; i++) {
+		let c = ca[i];
+		while (c.charAt(0) == ' ') {
+		c = c.substring(1);
+		}
+		if (c.indexOf(name) == 0) {
+		return c.substring(name.length, c.length);
+		}
+	}
+	return "";
+	}
