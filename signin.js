@@ -52,10 +52,7 @@ function responseData(data) {
         // const password = userData.Password;
         // const privateInfo = userData.Private;
         // const publicInfo = userData.Publick;
-        const username = data.Username;
-        const password = data.Password;
-        const privateInfo = data.Private;
-        const publicInfo = data.Publick;
+        const username = data.username;
         // const pasetoUser = userData. 
         // Note: Typo in the property name ("Publick" instead of "Public")
 
@@ -73,9 +70,9 @@ function responseData(data) {
         console.log("token", token);
 
         console.log("Username:", username);
-        console.log("Password:", password);
-        console.log("Private Info:", privateInfo);
-        console.log("Public Info:", publicInfo);
+        // console.log("Password:", password);
+        // console.log("Private Info:", privateInfo);
+        // console.log("Public Info:", publicInfo);
     }else {
         console.error("Gagal Login, Coba Lagi");
         return "Error: Gagal Login, Coba Lagi";
