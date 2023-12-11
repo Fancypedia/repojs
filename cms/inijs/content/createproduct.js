@@ -31,5 +31,8 @@ function responseData(result) {
     if (result.status == true) {
         alert("Berhasil Input Data");
         window.location.href = "getproduct.html";
+    }else{
+        alert("Gagal Input Data");
+        window.location.href = "getproduct.html";
     }
 }

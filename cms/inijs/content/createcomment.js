@@ -30,6 +30,8 @@ function responseData(result) {
         window.location.href = "getcomment.html";
     }
     else{
+        alert("Gagal Input Data");
+        window.location.href = "getcomment.html";
         console.log("gagal")
     }
 }

@@ -23,9 +23,9 @@ function  deleteBlog() {
     })
       .then(response => {
         if (response.ok) {
-          document.getElementById('response').innerText = 'comment deleted successfully';
+          document.getElementById('response').innerText = 'blog deleted successfully';
         } else {
-          document.getElementById('response').innerText = 'Failed to delete comment';
+          document.getElementById('response').innerText = 'Failed to delete blog';
         }
       })
       .catch(error => {
