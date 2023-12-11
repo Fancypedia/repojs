@@ -75,6 +75,23 @@ function responseData(result) {
         // console.log("Private Info:", privateInfo);
         // console.log("Public Info:", publicInfo);
     }else {
+        Swal.fire({
+            title: "Data Yang Anda Masukan Salah",
+            text: "Username Password Salah atau Akun Tidak Ada",
+            icon: "warning",
+            showCancelButton: true,
+            confirmButtonColor: "#3085d6",
+            cancelButtonColor: "#3085d6",
+            confirmButtonText: "Coba Login Ulang",
+            cancelButtonText: "Buat Akun"
+          }).then((result) => {
+            if (result.isConfirmed) {
+                window.location.href = "https://fancypedia.my.id/pages/signin/";
+            }
+            else{
+                window.location.href = "https://fancypedia.my.id/pages/signup/index.html";
+            }
+          });
         console.error("Gagal Login, Coba Lagi");
         return "Error: Gagal Login, Coba Lagi";
     }
