@@ -39,7 +39,6 @@ function responseData(result) {
                 window.location.href = "getproduct.html";
             }
           });
-        window.location.href = "getproduct.html";
     }else{
         alert("Gagal Input Data");
         window.location.href = "getproduct.html";
