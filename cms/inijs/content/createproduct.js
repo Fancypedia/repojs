@@ -29,7 +29,16 @@ export default function buatprodukkk(){
 function responseData(result) {
 
     if (result.status == true) {
-        alert("Berhasil Input Data");
+        Swal.fire({
+            title: "Berhasil!",
+            text: "Product Berhasil Dibuat!",
+            icon: "success",
+            confirmButtonText: "OK",
+          }).then((result) => {
+            if (result.isConfirmed) {
+                window.location.href = "getproduct.html";
+            }
+          });
         window.location.href = "getproduct.html";
     }else{
         alert("Gagal Input Data");

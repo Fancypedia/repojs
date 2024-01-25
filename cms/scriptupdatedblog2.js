@@ -27,9 +27,17 @@ export default function editBlog(){
 
 function responseFunction(result) {
     if (result.status == true) {
-        alert('berhasil update')
+        Swal.fire({
+            title: "Berhasil!",
+            text: "Blog Berhasil di Delete!",
+            icon: "success",
+            confirmButtonText: "OK",
+          }).then((result) => {
+            if (result.isConfirmed) {
+                window.location.href = "getblog.html";
+            }
+          });
         console.log("Berhasil update")
-        window.location.href = "getblog.html";
     } else {
         alert('gagal update')
         console.log("Gagal")

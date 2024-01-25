@@ -26,8 +26,17 @@ export default function createKomen(){
 function responseData(result) {
 
     if (result.status == true) {
-        alert("Berhasil Input Data");
-        window.location.href = "getcomment.html";
+        Swal.fire({
+            title: "Berhasil!",
+            text: "Comment Berhasil Dibuat!",
+            icon: "success",
+            confirmButtonText: "OK",
+          }).then((result) => {
+            if (result.isConfirmed) {
+                window.location.href = "getcomment.html";
+            }
+          });
+        
     }
     else{
         alert("Gagal Input Data");

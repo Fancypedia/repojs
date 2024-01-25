@@ -32,9 +32,17 @@ export default function editProduct(){
 function responseFunction(result) {
 
     if (result.status == true) {
-        alert('berhasil update')
+        Swal.fire({
+            title: "Berhasil!",
+            text: "Produk Berhasil di Delete!",
+            icon: "success",
+            confirmButtonText: "OK",
+          }).then((result) => {
+            if (result.isConfirmed) {
+              window.location.href = "getproduct.html";
+            }
+          });
         console.log("Berhasil update")
-        window.location.href = "getproduct.html";
     } else {
         alert('gagal update')
         console.log("Gagal")

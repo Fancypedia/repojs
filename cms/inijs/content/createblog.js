@@ -29,8 +29,16 @@ export default function createBlog(){
 function responseData(result) {
 
     if (result.status == true) {
-        alert("Berhasil Input Data");
-        window.location.href = "getblog.html";
+        Swal.fire({
+            title: "Berhasil!",
+            text: "Blog Berhasil Dibuat!",
+            icon: "success",
+            confirmButtonText: "OK",
+          }).then((result) => {
+            if (result.isConfirmed) {
+                window.location.href = "getblog.html";
+            }
+          });
     }else{
         alert("Gagal Input Data");
         window.location.href = "getblog.html";

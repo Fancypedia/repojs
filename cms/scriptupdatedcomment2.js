@@ -28,9 +28,18 @@ export default function editComment(){
 function responseFunction(result) {
 
     if (result.status == true) {
-        alert('berhasil update')
+        Swal.fire({
+            title: "Berhasil!",
+            text: "Comment Berhasil di Delete!",
+            icon: "success",
+            confirmButtonText: "OK",
+          }).then((result) => {
+            if (result.isConfirmed) {
+                window.location.href = "getcomment.html";
+            }
+          });
         console.log("Berhasil update")
-        window.location.href = "getcomment.html";
+        
     } else {
         alert('gagal update')
         console.log("Gagal")
