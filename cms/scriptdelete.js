@@ -24,8 +24,12 @@ function deleteProduct() {
       .then(response => {
         if (response.ok) {
           document.getElementById('response').innerText = 'Product deleted successfully';
-          alert('berhasil DELETE')
           console.log("Berhasil DELETE")
+          Swal.fire({
+            title: "Berhasil!",
+            text: "Produk Berhasil di Delete!",
+            icon: "success"
+          });
           window.location.href = "getproduct.html";
         } else {
           document.getElementById('response').innerText = 'Failed to delete product';
