@@ -24,8 +24,12 @@ function  deleteComment() {
       .then(response => {
         if (response.ok) {
           document.getElementById('response').innerText = 'comment deleted successfully';
+          alert('berhasil DELETE')
+          console.log("Berhasil DELETE")
+          window.location.href = "getcomment.html";
         } else {
           document.getElementById('response').innerText = 'Failed to delete comment';
+          alert('gagal DELETE')
         }
       })
       .catch(error => {

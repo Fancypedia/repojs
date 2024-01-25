@@ -24,8 +24,12 @@ function  deleteBlog() {
       .then(response => {
         if (response.ok) {
           document.getElementById('response').innerText = 'blog deleted successfully';
+          alert('berhasil DELETE')
+          console.log("Berhasil DELETE")
+          window.location.href = "getblog.html";
         } else {
           document.getElementById('response').innerText = 'Failed to delete blog';
+          alert('gagal DELETE')
         }
       })
       .catch(error => {
