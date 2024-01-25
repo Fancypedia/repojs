@@ -28,9 +28,13 @@ function deleteProduct() {
           Swal.fire({
             title: "Berhasil!",
             text: "Produk Berhasil di Delete!",
-            icon: "success"
+            icon: "success",
+            confirmButtonText: "OK",
+          }).then((result) => {
+            if (result.isConfirmed) {
+              window.location.href = "getproduct.html";
+            }
           });
-          window.location.href = "getproduct.html";
         } else {
           document.getElementById('response').innerText = 'Failed to delete product';
           alert('gagal DELETE')

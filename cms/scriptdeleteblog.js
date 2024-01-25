@@ -27,10 +27,13 @@ function  deleteBlog() {
           Swal.fire({
             title: "Berhasil!",
             text: "Blog Berhasil di Delete!",
-            icon: "success"
+            icon: "success",
+            confirmButtonText: "OK",
+          }).then((result) => {
+            if (result.isConfirmed) {
+              window.location.href = "getblog.html";
+            }
           });
-          console.log("Berhasil DELETE")
-          window.location.href = "getblog.html";
         } else {
           document.getElementById('response').innerText = 'Failed to delete blog';
           alert('gagal DELETE')

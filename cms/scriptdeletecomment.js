@@ -27,10 +27,13 @@ function  deleteComment() {
           Swal.fire({
             title: "Berhasil!",
             text: "Comment Berhasil di Delete!",
-            icon: "success"
+            icon: "success",
+            confirmButtonText: "OK",
+          }).then((result) => {
+            if (result.isConfirmed) {
+              window.location.href = "getcomment.html";
+            }
           });
-          console.log("Berhasil DELETE")
-          window.location.href = "getcomment.html";
         } else {
           document.getElementById('response').innerText = 'Failed to delete comment';
           alert('gagal DELETE')
