@@ -5,14 +5,14 @@ export let APILogin = "https://asia-southeast2-annular-hexagon-401501.cloudfunct
 export let APIAuthorizationUser = "https://asia-southeast2-testlogin-366704.cloudfunctions.net/login-4";
 
 //authloginadmin
-export let APIAuthorizationAdmin = "https://asia-southeast2-testlogin-366704.cloudfunctions.net/login-5";
+export let APIAuthorizationAdmin = "https://asia-southeast2-testlogin-366704.cloudfunctions.net/login_fancy";
 
 //blog
 export let getallblog = "https://asia-southeast2-testlogin-366704.cloudfunctions.net/getallblog";
 export let getallproduct = "https://asia-southeast2-testlogin-366704.cloudfunctions.net/getallproduct";
 
 //signup user baru
-export let userbarunowa = "https://asia-southeast2-testlogin-366704.cloudfunctions.net/createacountfix";
+export let userbarunowa = "https://asia-southeast2-testlogin-366704.cloudfunctions.net/create_account_userr";
 //signin user baru
 export let loginuserbarunowa = "https://asia-southeast2-testlogin-366704.cloudfunctions.net/login";
 
