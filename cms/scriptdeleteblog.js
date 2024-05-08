@@ -8,7 +8,8 @@ function  deleteBlog() {
       return;
     }
   
-    const endpoint = 'https://asia-southeast2-testlogin-366704.cloudfunctions.net/deleteblogg';
+    // const endpoint = 'https://asia-southeast2-testlogin-366704.cloudfunctions.net/deleteblogg';
+    const endpoint = 'https://asia-southeast2-testlogin-366704.cloudfunctions.net/delete-blog';
     const payload = {
       id: blogID
     };

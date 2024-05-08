@@ -1,6 +1,7 @@
 // Fetch all products from the server
 function getBlog() {
-  fetch('https://asia-southeast2-testlogin-366704.cloudfunctions.net/getallblog')
+  // fetch('https://asia-southeast2-testlogin-366704.cloudfunctions.net/getallblog')
+  fetch('https://asia-southeast2-testlogin-366704.cloudfunctions.net/getall-blog')
     .then(response => response.json())
     .then(data => {
       if (data.status === true) {
