@@ -37,13 +37,13 @@ export default function adminAuthorization() {
 }
 
 function handleAuthorizationResult(data) {
+    print(data.status)
     if (data.status === true) {
         // Additional logic based on the role and elements
         
     } else if (data.status === false) {
         // No token header or no decode result
-        deleteCookie();
-        window.location.href="https://fancypedia.my.id/pages/signin/index.html";
+        // window.location.href="https://fancypedia.my.id/pages/signinadmin/index.html";
 
     }
 }
