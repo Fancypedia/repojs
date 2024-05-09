@@ -17,7 +17,7 @@ export let getallproduct = "https://asia-southeast2-testlogin-366704.cloudfuncti
 export let loginuserbarunowa = "https://asia-southeast2-testlogin-366704.cloudfunctions.net/login";
 
 //signin admin baru
-// export let adminloginbaru = "https://asia-southeast2-testlogin-366704.cloudfunctions.net/loginbaru";
+export let adminloginbaru = "https://asia-southeast2-testlogin-366704.cloudfunctions.net/loginbaru";
 
 
 
@@ -31,6 +31,6 @@ export let loginuserbarunowa = "https://asia-southeast2-testlogin-366704.cloudfu
 export let userbarunowa = "https://asia-southeast2-testlogin-366704.cloudfunctions.net/create_account_userr";
 
 //signin admin baru
-export let adminloginbaru = "https://asia-southeast2-testlogin-366704.cloudfunctions.net/login_fancy ";
+// export let adminloginbaru = "https://asia-southeast2-testlogin-366704.cloudfunctions.net/login_fancy ";
 export let upadateblog_1 = "https://asia-southeast2-testlogin-366704.cloudfunctions.net/updated-blog";
 export let createblogg = "https://asia-southeast2-testlogin-366704.cloudfunctions.net/create-blog";
