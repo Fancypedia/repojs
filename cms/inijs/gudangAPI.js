@@ -19,13 +19,13 @@ export let loginuserbarunowa = "https://asia-southeast2-testlogin-366704.cloudfu
 //signin admin baru
 // export let adminloginbaru = "https://asia-southeast2-testlogin-366704.cloudfunctions.net/loginbaru";
 
-export let updateproductt = "https://asia-southeast2-testlogin-366704.cloudfunctions.net/updateproductt";
+// export let updateproductt = "https://asia-southeast2-testlogin-366704.cloudfunctions.net/updateproductt";
 export let updatecommentt = "https://asia-southeast2-testlogin-366704.cloudfunctions.net/updatecommentt";
 // export let upadateblog_1 = "https://asia-southeast2-testlogin-366704.cloudfunctions.net/upadateblog-1";
 
 // export let createblogg = "https://asia-southeast2-testlogin-366704.cloudfunctions.net/createblogg";
 export let createcommentt = "https://asia-southeast2-testlogin-366704.cloudfunctions.net/createcommentt";
-export let createproductfix = "https://asia-southeast2-testlogin-366704.cloudfunctions.net/createproductfix";
+// export let createproductfix = "https://asia-southeast2-testlogin-366704.cloudfunctions.net/createproductfix";
 
 
 
@@ -42,7 +42,8 @@ export let adminloginbaru = "https://asia-southeast2-testlogin-366704.cloudfunct
 export let upadateblog_1 = "https://asia-southeast2-testlogin-366704.cloudfunctions.net/updated-blog";
 export let createblogg = "https://asia-southeast2-testlogin-366704.cloudfunctions.net/create-blog";
 
-
+export let updateproductt = "https://asia-southeast2-testlogin-366704.cloudfunctions.net/updated-product";
+export let createproductfix = "https://asia-southeast2-testlogin-366704.cloudfunctions.net/create-product";
 
 
 // https://asia-southeast2-testlogin-366704.cloudfunctions.net/updated-blog
@@ -55,3 +56,8 @@ export let createblogg = "https://asia-southeast2-testlogin-366704.cloudfunction
 
 // create account
 // https://asia-southeast2-testlogin-366704.cloudfunctions.net/create_account_userr 
+
+// https://asia-southeast2-testlogin-366704.cloudfunctions.net/updated-product
+// https://asia-southeast2-testlogin-366704.cloudfunctions.net/getall-product
+// https://asia-southeast2-testlogin-366704.cloudfunctions.net/create-product
+// https://asia-southeast2-testlogin-366704.cloudfunctions.net/delete-product 

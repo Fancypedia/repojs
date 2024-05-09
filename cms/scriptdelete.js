@@ -8,7 +8,8 @@ function deleteProduct() {
       return;
     }
   
-    const endpoint = 'https://asia-southeast2-testlogin-366704.cloudfunctions.net/deleteproductt';
+    // const endpoint = 'https://asia-southeast2-testlogin-366704.cloudfunctions.net/deleteproductt';
+    const endpoint = 'https://asia-southeast2-testlogin-366704.cloudfunctions.net/delete-product ';
     const payload = {
       nomorid: productID
     };
