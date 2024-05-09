@@ -21,6 +21,7 @@ export default function LoginAdminFix(){
         "username": username,
         "password": password
     }
+    console.log(datainjson)
 
     loginButton.style.display = "none";
     loadingIndicator.style.display = "block";

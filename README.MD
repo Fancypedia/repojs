@@ -1,7 +1,7 @@
 ## Terminal
 ```
 git tag
-git tag v0.6.7
+git tag v0.6.8
 git push origin --tags
 ```
 
