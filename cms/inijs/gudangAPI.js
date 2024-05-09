@@ -9,7 +9,7 @@ export let APILogin = "https://asia-southeast2-annular-hexagon-401501.cloudfunct
 export let APIAuthorizationUser = "https://asia-southeast2-testlogin-366704.cloudfunctions.net/login-4";
 
 //authloginadmin
-export let APIAuthorizationAdmin = "https://asia-southeast2-testlogin-366704.cloudfunctions.net/login-5";
+export let APIAuthorizationAdmin = "https://asia-southeast2-testlogin-366704.cloudfunctions.net/decode-tokenbaru";
 
 //signup user baru
 // export let userbarunowa = "https://asia-southeast2-testlogin-366704.cloudfunctions.net/createacountfix";
@@ -17,7 +17,7 @@ export let APIAuthorizationAdmin = "https://asia-southeast2-testlogin-366704.clo
 export let loginuserbarunowa = "https://asia-southeast2-testlogin-366704.cloudfunctions.net/login";
 
 //signin admin baru
-export let adminloginbaru = "https://asia-southeast2-testlogin-366704.cloudfunctions.net/loginbaru";
+// export let adminloginbaru = "https://asia-southeast2-testlogin-366704.cloudfunctions.net/loginbaru";
 
 // export let updateproductt = "https://asia-southeast2-testlogin-366704.cloudfunctions.net/updateproductt";
 export let updatecommentt = "https://asia-southeast2-testlogin-366704.cloudfunctions.net/updatecommentt";
@@ -38,7 +38,7 @@ export let createcommentt = "https://asia-southeast2-testlogin-366704.cloudfunct
 export let userbarunowa = "https://asia-southeast2-testlogin-366704.cloudfunctions.net/create_account_userr";
 
 //signin admin baru
-// export let adminloginbaru = "https://asia-southeast2-testlogin-366704.cloudfunctions.net/login_fancy ";
+export let adminloginbaru = "https://asia-southeast2-testlogin-366704.cloudfunctions.net/login_fancy";
 export let upadateblog_1 = "https://asia-southeast2-testlogin-366704.cloudfunctions.net/updated-blog";
 export let createblogg = "https://asia-southeast2-testlogin-366704.cloudfunctions.net/create-blog";
 
