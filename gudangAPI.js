@@ -12,9 +12,25 @@ export let getallblog = "https://asia-southeast2-testlogin-366704.cloudfunctions
 export let getallproduct = "https://asia-southeast2-testlogin-366704.cloudfunctions.net/getallproduct";
 
 //signup user baru
-export let userbarunowa = "https://asia-southeast2-testlogin-366704.cloudfunctions.net/createacountfix";
+// export let userbarunowa = "https://asia-southeast2-testlogin-366704.cloudfunctions.net/createacountfix";
 //signin user baru
 export let loginuserbarunowa = "https://asia-southeast2-testlogin-366704.cloudfunctions.net/login";
 
 //signin admin baru
-export let adminloginbaru = "https://asia-southeast2-testlogin-366704.cloudfunctions.net/loginbaru";
+// export let adminloginbaru = "https://asia-southeast2-testlogin-366704.cloudfunctions.net/loginbaru";
+
+
+
+
+// API BARU BARU INI BOSSSSSSSSSSSSSSSS```````````````````````````
+// API BARU BARU INI BOSSSSSSSSSSSSSSSS```````````````````````````
+// API BARU BARU INI BOSSSSSSSSSSSSSSSS```````````````````````````
+// API BARU BARU INI BOSSSSSSSSSSSSSSSS```````````````````````````
+
+//signup user baru
+export let userbarunowa = "https://asia-southeast2-testlogin-366704.cloudfunctions.net/create_account_userr";
+
+//signin admin baru
+export let adminloginbaru = "https://asia-southeast2-testlogin-366704.cloudfunctions.net/login_fancy ";
+export let upadateblog_1 = "https://asia-southeast2-testlogin-366704.cloudfunctions.net/updated-blog";
+export let createblogg = "https://asia-southeast2-testlogin-366704.cloudfunctions.net/create-blog";
