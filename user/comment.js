@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
-    fetch('https://asia-southeast2-testlogin-366704.cloudfunctions.net/getallcomment')
+    // fetch('https://asia-southeast2-testlogin-366704.cloudfunctions.net/getallcomment')
+    fetch('https://asia-southeast2-testlogin-366704.cloudfunctions.net/getall-comment')
         .then(response => response.json())
         .then(data => {
             if (data.status) {

@@ -8,7 +8,8 @@ function  deleteComment() {
       return;
     }
   
-    const endpoint = 'https://asia-southeast2-testlogin-366704.cloudfunctions.net/deletecomment-1';
+    // const endpoint = 'https://asia-southeast2-testlogin-366704.cloudfunctions.net/deletecomment-1';
+    const endpoint = 'https://asia-southeast2-testlogin-366704.cloudfunctions.net/delete-comment';
     const payload = {
       id: commentID
     };

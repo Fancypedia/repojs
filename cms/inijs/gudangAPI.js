@@ -20,11 +20,11 @@ export let loginuserbarunowa = "https://asia-southeast2-testlogin-366704.cloudfu
 // export let adminloginbaru = "https://asia-southeast2-testlogin-366704.cloudfunctions.net/loginbaru";
 
 // export let updateproductt = "https://asia-southeast2-testlogin-366704.cloudfunctions.net/updateproductt";
-export let updatecommentt = "https://asia-southeast2-testlogin-366704.cloudfunctions.net/updatecommentt";
+// export let updatecommentt = "https://asia-southeast2-testlogin-366704.cloudfunctions.net/updatecommentt";
 // export let upadateblog_1 = "https://asia-southeast2-testlogin-366704.cloudfunctions.net/upadateblog-1";
 
 // export let createblogg = "https://asia-southeast2-testlogin-366704.cloudfunctions.net/createblogg";
-export let createcommentt = "https://asia-southeast2-testlogin-366704.cloudfunctions.net/createcommentt";
+// export let createcommentt = "https://asia-southeast2-testlogin-366704.cloudfunctions.net/createcommentt";
 // export let createproductfix = "https://asia-southeast2-testlogin-366704.cloudfunctions.net/createproductfix";
 
 
@@ -44,6 +44,20 @@ export let createblogg = "https://asia-southeast2-testlogin-366704.cloudfunction
 
 export let updateproductt = "https://asia-southeast2-testlogin-366704.cloudfunctions.net/updated-product";
 export let createproductfix = "https://asia-southeast2-testlogin-366704.cloudfunctions.net/create-product";
+
+
+export let createcommentt = "https://asia-southeast2-testlogin-366704.cloudfunctions.net/create-comment";
+export let updatecommentt = "https://asia-southeast2-testlogin-366704.cloudfunctions.net/updated-comment ";
+
+
+// https://asia-southeast2-testlogin-366704.cloudfunctions.net/getall-comment
+// https://asia-southeast2-testlogin-366704.cloudfunctions.net/create-comment
+// https://asia-southeast2-testlogin-366704.cloudfunctions.net/delete-comment
+// https://asia-southeast2-testlogin-366704.cloudfunctions.net/updated-comment 
+
+
+
+
 
 
 // https://asia-southeast2-testlogin-366704.cloudfunctions.net/updated-blog
