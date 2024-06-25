@@ -47,7 +47,7 @@ export let createproductfix = "https://asia-southeast2-testlogin-366704.cloudfun
 
 
 export let createcommentt = "https://asia-southeast2-testlogin-366704.cloudfunctions.net/create-comment";
-export let updatecommentt = "https://asia-southeast2-testlogin-366704.cloudfunctions.net/updated-comment ";
+export let updatecommentt = "https://asia-southeast2-testlogin-366704.cloudfunctions.net/updated-comments";
 
 
 // https://asia-southeast2-testlogin-366704.cloudfunctions.net/getall-comment
